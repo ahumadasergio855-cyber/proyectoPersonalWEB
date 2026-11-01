@@ -1,0 +1,134 @@
+/* ------------ RESET ----------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------Body ---------------------*/
+body{
+    font-family: Arial, Time New Roman , sans-sarif;/* esto especifica el tipo de letra*/
+    background-color: #0f172a;/* el color que tendra el fondo en general*/
+    color: white; 
+    line-height: 1.6; /* duda */
+}
+
+/* ----------NAVEGACIÓN-----------------*/
+nav{
+  background:#111827;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul{
+  display: flex;/*duda*/
+  justify-content: center; /* sirve para justificar el texto escrito y centrarlo en los recuadro*/
+  gap: 20px;/*duda de gap y el px es los pixeles unidad de medida*/
+  list-style:none;/* duda*/
+  flex-wrap: wrap;/*duda*/
+}
+/* necesio explicar para que sirve el nav a en CSS*/
+nav a{
+  color:white;
+  text-decoration: none;
+  font-weight:bold;/*duda*/
+  transition: 0.3s;/*unidad de tiempo de transición es S de segundos*/
+}
+
+nav a: hover{
+  color:#38bdf8;
+}
+
+/*---------CONTENIDO-----------------*/
+main{
+  max-width:1200px;/* el limite del ancho del main se establece ahi */
+  margin:auto;/*se pone el margen automatico*/
+  padding: 20px;
+}
+
+header{
+  text-align: center;/*duda sobre align*/
+  margin:40px 0;/*duda*/
+}
+
+h1{
+  color:#38bdf8;
+  margin-bottom:20px;
+}
+h2,h3,h4{
+  color:#60a5fa;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+section{
+  background:#1e293b;
+  margin:25px 0;
+  padding:25px;
+  border-radius:12px;
+}
+
+/*----------------Imagenes personalización----------------*/
+img{
+  max-width:100%;
+  display:block;
+  margin: 20px auto ;
+  border-radius: 10px;
+
+}
+
+/*--------------TABLA----------------*/
+table{
+  width:100%;
+  border-collapse:collapse;/*duda*/
+  margin-top:20px;
+}
+th{
+  background:#0284c7;
+  color: white;
+}
+
+th,
+td{
+  border:1px solid #475569;
+  padding: 12px;
+  text-align:left;
+
+}
+
+tr:nth-child(even){
+  background:#334155;
+}
+
+/*------------ FORMULARIO ----------------*/
+form{
+  margin-top: 20px;
+
+}
+
+fieldset{
+  border:2px solid #38bdf8;
+  border-radius:10px;
+  padding:20px;
+  margin-bottom:20px;
+
+}
+
+legend{
+  padding:5px;
+  color:#38bdf8;
+  font-weight:bold;
+
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:8px;
+}
