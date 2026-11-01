@@ -293,5 +293,25 @@
     Correo Electrónico
       <a href="mailto:info@inazumaandaluciafest.com">info@inazumaandaluciafest </p>
   </footer>
+	<script>
+
+const citas = document.querySelectorAll(".cita");
+let actual = 0;
+
+setInterval(() => {
+
+    citas[actual].classList.remove("activa");
+
+    actual++;
+
+    if(actual >= citas.length){
+        actual = 0;
+    }
+
+    citas[actual].classList.add("activa");
+
+}, 5000);
+
+</script>
 </body>
 </html>
