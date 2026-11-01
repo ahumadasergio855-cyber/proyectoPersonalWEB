@@ -7,10 +7,16 @@
 
 /*-------------Body ---------------------*/
 body{
-    font-family: Arial, Time New Roman , sans-sarif;/* esto especifica el tipo de letra*/
-    background-color: #0f172a;/* el color que tendra el fondo en general*/
-    color: white; 
-    line-height: 1.6; /* duda */
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #0f172a,
+        #1e3a8a,
+        #0f172a
+    );
 }
 
 /* ----------NAVEGACIÓN-----------------*/
