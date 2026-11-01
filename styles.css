@@ -26,6 +26,8 @@ nav{
   top: 0;
   box-shadow:0 2px 10px rgba(0,0,0,0.4);/*duda*/
   z-index:1000;/*duda*/
+  display:flex;
+  justify-content:center;
 }
 
 nav ul{
@@ -34,7 +36,13 @@ nav ul{
   gap: 20px;/*duda de gap y el px es los pixeles unidad de medida*/
   list-style:none;/* duda*/
   flex-wrap: wrap;/*duda*/
+  background:#1e293b;
+  padding:10px;
+  border-radius:15px;
 }
+
+  
+
 /* necesio explicar para que sirve el nav a en CSS*/
 nav a{
   color:white;
@@ -57,7 +65,7 @@ nav a:hover{
 nav a::after{
   content:"";
   position:absolute;
-  left:50px;
+  left:50%;
   bottom:0;
   width:0;
   height:3px;
@@ -66,13 +74,13 @@ nav a::after{
     }
 nav a:hover::after{
   width:80%;
-  left:10px;
+  left:10%;
 }
   nav li{
     border: 1px solid rgba(255,255,255,0.15);
     border-radius:10px;
     overflow:hidden;
-
+    }
   nav li:hover{
     transform:translateY(-2px);
     transition:0.3s;
@@ -93,6 +101,9 @@ header{
 h1{
   color:#38bdf8;
   margin-bottom:20px;
+  text-shadow:
+  0 0 10px #38bdf8,
+  0 0 20px #38bdf8;
 }
 h2,h3,h4{
   color:#60a5fa;
