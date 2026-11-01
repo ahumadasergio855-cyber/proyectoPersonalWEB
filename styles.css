@@ -25,7 +25,7 @@ nav{
 
 nav ul{
   display: flex;/*duda*/
-  justify-content: center; /* sirve para justificar el texto escrito y centrarlo en los recuadro*/
+  justify-content:center; /* sirve para justificar el texto escrito y centrarlo en los recuadro*/
   gap: 20px;/*duda de gap y el px es los pixeles unidad de medida*/
   list-style:none;/* duda*/
   flex-wrap: wrap;/*duda*/
@@ -35,8 +35,9 @@ nav a{
   color:white;
   text-decoration: none;
   font-weight:bold;/*duda*/
+  padding:10px 15px;
   border-radius:8px;
-  transition: all 0.3s ease;/*unidad de tiempo de transición es S de segundos*/
+  transition:all 0.3s ease;/*unidad de tiempo de transición es S de segundos*/
   /*duda de ease */
 }
 
@@ -44,7 +45,7 @@ nav a: hover{
   background:#ff7b00;
   color:white;
   transform:translateY(-2px);
-  box-shadow: 0 0 15px rgba(255,123,0,0.6);
+  box-shadow:0 0 15px rgba(255,123,0,0.6);
 }
 
 /*---------CONTENIDO-----------------*/
@@ -138,4 +139,88 @@ textarea{
   margin-bottom:15px;
   border:none;
   border-radius:8px;
+}
+
+#EnlancesInteresantes a{
+    display:block;
+    background:#334155;
+    margin:15px 0;
+    padding:15px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+    border-left:5px solid #ff7b00;
+}
+
+#EnlancesInteresantes a:hover{
+    background:#475569;
+    transform:translateX(8px);
+    box-shadow:0 0 15px rgba(255,123,0,0.5);
+}
+
+
+/* -----------Footer ------*/
+footer{
+    background:#0b1120;
+    margin-top:40px;
+    padding:30px;
+    text-align:center;
+    border-top:4px solid #ff7b00;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+footer a{
+    color:#ff7b00;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+
+
+/**-----------Carrusel de citas inazuma eleven--------------*/
+
+.carrusel-citas{
+    position:relative;
+    min-height:160px;
+}
+
+.cita{
+    display:none;
+    text-align:center;
+    animation:fadeIn 1s;
+}
+
+.cita.activa{
+    display:block;
+}
+
+.cita blockquote{
+    font-size:1.3rem;
+    color:#ffffff;
+    font-style:italic;
+    border:none;
+}
+
+.cita p{
+    color:#ff7b00;
+    font-weight:bold;
+    margin-top:10px;
+}
+/*que es keyframes*/
+@keyframes fadeIn{  
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
