@@ -41,18 +41,39 @@ nav a{
   color:white;
   text-decoration: none;
   font-weight:bold;/*duda*/
-  padding:10px 15px;
+  padding:13px 15px;
   border-radius:8px;
   transition:all 0.3s ease;/*unidad de tiempo de transición es S de segundos*/
   /*duda de ease */
+  position:relative;
 }
 
+
 nav a: hover{
-  background:#ff7b00;
-  color:white;
-  transform:translateY(-2px);
-  box-shadow:0 0 15px rgba(255,123,0,0.6);
+  background:rgba(56,255,122,0,15);
+  color:#38ff7a;
+  box-shadow:0 0 15px rgba(56,255,122,0.5);
 }
+
+nav a::after{
+  content:"";
+  position:aboslute;
+  left:50px;
+  bottom:0;
+  width:0;
+  height:3px;
+  background:#38ff7a;
+  transition:all 0.3s ease;
+
+  nav li{
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius:10px;
+    overflow:hidden;
+
+  nav li:hover{
+    transform:translateY(-2px);
+    transition:0.3s;
+  }
 
 /*---------CONTENIDO-----------------*/
 main{
@@ -229,4 +250,23 @@ footer a:hover{
     to{
         opacity:1;
     }
+}
+/*------- boton de vuelta al inicio------*/
+  .skip-link{
+    display:inline-block;
+    margin:20px;
+    background:#00b34b;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:25px;
+    font-weight:bold;
+    transition:all 0.3s ease;
+}
+
+.skip-link:hover{
+    background:#38ff7a;
+    color:#0f172a;
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(56,255,122,0.7);
 }
